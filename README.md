@@ -27,43 +27,29 @@ https://www.kaggle.com/datasets/saadharoon27/hr-analytics-dataset
 
 
 
+
 ## Data Preparation and Metrics Calculation
-
-# HR Attrition & Workforce Insights Dashboard
-
-This repository contains the Tableau dashboard for analyzing employee attrition and other HR metrics.
-
-## Key Metrics
-
-- **Attrition Rate**: 
-  \[
-  \text{Attrition Rate} = \frac{\text{SUM([Attrition count])}}{\text{SUM([Employee Count])}}
-  \]
-  
-- **Attrition Count**: 
-  \[
-  \text{Attrition Count} = \text{IF [Attrition] = 'Yes' THEN 1 ELSE 0 END}
-  \]
-
-- **Active Employees**: 
-  \[
-  \text{Active Employees} = \text{SUM([Employee Count]) - SUM([Attrition count])}
-  \]
 
 
 The dataset used in this project includes employee information such as age, gender, department, job satisfaction, education field, and attrition status. To derive meaningful insights, the following calculated fields were created in Tableau:
 
 **Attrition Rate:** This metric represents the proportion of employees who left the company. It is calculated as:
 
-
-
+```
+Attrition Rate =  sum([Attrition count])/sum([Employee Count])
+```
 
 **Attrition Count:** This field counts the number of employees who left the company. The logic used is:
 
-
+```
+Attrition count: if [Attrition]='Yes' then 1 else 0 END
+```
 
 **Active Employees:** This metric represents the current number of employees still with the company, calculated as:
 
+```
+Active Employees: sum([Employee Count])-SUM([Attrition count])
+```
 
 
 These metrics were then used to create various visualizations to explore different dimensions of the data.
