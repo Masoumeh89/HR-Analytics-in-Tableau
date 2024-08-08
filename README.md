@@ -21,6 +21,9 @@ In today's competitive business environment, retaining talented employees is cru
 
 ## Data Source
 
+- Data Link:
+
+https://www.kaggle.com/datasets/saadharoon27/hr-analytics-dataset
 
 
 
@@ -31,14 +34,22 @@ The dataset used in this project includes employee information such as age, gend
 
 **Attrition Rate:** This metric represents the proportion of employees who left the company. It is calculated as:
 
+\[
+  \text{Attrition Rate} = \frac{\text{SUM([Attrition count])}}{\text{SUM([Employee Count])}}
+\]
 
 
 **Attrition Count:** This field counts the number of employees who left the company. The logic used is:
 
+\[
+  \text{Attrition Count} = \text{IF [Attrition] = 'Yes' THEN 1 ELSE 0 END}
+\]
 
 **Active Employees:** This metric represents the current number of employees still with the company, calculated as:
 
-
+\[
+  \text{Active Employees} = \text{SUM([Employee Count]) - SUM([Attrition count])}
+\]
 
 These metrics were then used to create various visualizations to explore different dimensions of the data.
 
@@ -64,15 +75,33 @@ These KPIs provide a high-level overview of the workforce and its attrition tren
 
 **Attrition by Gender (Bar Chart):** This sheet visualizes the number of employees who have left the company, segmented by gender. It helps identify if there are gender-specific trends in attrition.
 
+<img width="521" alt="image" src="https://github.com/user-attachments/assets/a82f5322-9e85-418f-b9b8-020d49c10d3e">
+
+
 **Department with Attrition (Pie Chart):** This pie chart illustrates the distribution of attrition across different departments, allowing HR professionals to pinpoint departments with higher turnover rates.
+
+<img width="338" alt="image" src="https://github.com/user-attachments/assets/ab80eb92-797f-4c30-b070-c93e7f16fc02">
+
 
 **Number of Employees by Age (Bar Chart):** This chart shows the distribution of employees across different age groups, helping to understand the age demographics of the workforce.
 
+<img width="461" alt="image" src="https://github.com/user-attachments/assets/9853c3c4-9b0d-4779-aca5-571029a67fa9">
+
+
 **Job Satisfaction with Employee Count (Table):** This table lists the number of employees and their corresponding job satisfaction levels, providing insights into how job satisfaction correlates with employee retention.
+
+<img width="536" alt="image" src="https://github.com/user-attachments/assets/3206b415-0124-4c63-ac28-89a1008c9bfe">
+
 
 **Education Field Wise Attrition (Bar Chart):** This bar chart analyzes attrition rates based on the education field, helping to determine if certain educational backgrounds are more prone to leaving the company.
 
+<img width="532" alt="image" src="https://github.com/user-attachments/assets/2add7f38-c36b-4f8d-9c07-7b4469f08dd8">
+
+
 **Attrition Rate by Gender for Different Age Groups (Pie Charts):** This sheet presents five pie charts, each showing the attrition rate for different age groups segmented by gender. It offers a detailed view of how age and gender interact in relation to attrition.
+
+<img width="542" alt="image" src="https://github.com/user-attachments/assets/eaf09b7f-2118-42b4-9281-3241dc1a354e">
+
 
 
 ## Data Analysis
