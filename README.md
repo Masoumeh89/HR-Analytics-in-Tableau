@@ -36,7 +36,7 @@ The dataset used in this project includes employee information such as age, gend
 **Attrition Rate:** This metric represents the proportion of employees who left the company. It is calculated as:
 
 ```
-Attrition Rate =  sum([Attrition count])/sum([Employee Count])
+Attrition Rate:  sum([Attrition count])/sum([Employee Count])
 ```
 
 **Attrition Count:** This field counts the number of employees who left the company. The logic used is:
